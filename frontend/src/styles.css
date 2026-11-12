@@ -1,0 +1,34 @@
+:root{--ink:#2a1420;--plum:#4a1d3a;--rose:#c25b7e;--gold:#c9a24a;--bg:#fbf6f3;--line:#eadfd9}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,.logo span{font-family:"Playfair Display",serif}a{color:inherit;text-decoration:none;cursor:pointer}
+.top{background:var(--ink);color:#e9d9d2;font-size:12px;padding:8px 5vw;display:flex;justify-content:space-between}
+.top button{background:none;border:0;color:#bba;cursor:pointer}.top .on{background:var(--gold);color:#000;border-radius:3px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 5vw;background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;gap:12px;flex-wrap:wrap}
+.logo{display:flex;gap:10px;align-items:center}.logo b{background:var(--plum);color:#fff;border-radius:8px;width:34px;height:34px;display:grid;place-items:center;font-family:"Playfair Display"}
+.logo small{display:block;font:600 8px Inter;letter-spacing:2px;color:var(--rose)}
+.nav nav{display:flex;gap:26px;font-size:13px;text-transform:uppercase;letter-spacing:.5px}.nav nav a.active{border-bottom:2px solid var(--gold)}
+.nav>div{display:flex;gap:14px;align-items:center}
+.btn{background:var(--ink);color:#fff;border:0;padding:10px 20px;border-radius:8px;font-weight:600;cursor:pointer;display:inline-block}.btn.gold{background:var(--gold);color:#000}.btn.sm{padding:4px 12px}.btn:disabled{opacity:.4}
+.hero{background:var(--ink);color:#fff;text-align:center;padding:48px 5vw}.hero h1{margin:0;font-size:44px}.hero p{color:#bba}
+.hero.big{text-align:left;padding:90px 8vw;background:linear-gradient(120deg,var(--ink),var(--plum))}.hero.big h1{font-size:68px}
+.stats{display:flex;gap:40px;margin-top:40px;color:#bba}.stats b{display:block;color:var(--gold);font:700 26px "Playfair Display"}
+.wrap{max-width:1200px;margin:auto;padding:40px 5vw}.narrow{max-width:720px}.center{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.card{position:relative;display:block}.card img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}.card h3{font-size:15px;margin:10px 0 4px}
+.row{display:flex;justify-content:space-between;align-items:center}.badge{position:absolute;top:10px;left:10px;background:var(--rose);color:#fff;font-size:10px;padding:3px 8px;border-radius:4px;font-style:normal}
+.shop{display:grid;grid-template-columns:220px 1fr;gap:28px}.side{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;height:max-content;display:flex;flex-direction:column;gap:10px}
+input,textarea,select{padding:11px;border:1px solid var(--line);border-radius:8px;font:inherit;width:100%}
+.form{display:flex;flex-direction:column;gap:12px}.box{background:#fff;padding:28px;border-radius:14px;border:1px solid var(--line)}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:40px}.detail img{width:100%;border-radius:12px}
+.line{display:flex;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.line img{width:60px;border-radius:6px}.line span{flex:1}.line input{width:70px}
+.two{display:grid;grid-template-columns:1fr 2fr;gap:30px}.foot{background:var(--ink);color:#bba;text-align:center;padding:26px;font-size:13px}.foot a{color:var(--gold)}
+@media(max-width:800px){.shop,.detail,.two{grid-template-columns:1fr}.hero.big h1{font-size:44px}}
+
+
+.authbox{text-align:center}.authbox .form{text-align:left}.authbox h2{margin:12px 0 4px}.sub{color:#8a7a80;margin:0 0 18px;font-size:14px}
+.logo.big{justify-content:center}.logo.big b{width:48px;height:48px;font-size:22px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+.inp{position:relative}.inp button{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;cursor:pointer;font-size:16px}
+.field.bad input{border-color:#c0392b;background:#fff6f5}.err{color:#c0392b;font-size:12.5px;margin-top:4px;display:block}
+.alert{background:#fdecea;color:#a93226;border:1px solid #f5c6c0;padding:10px 12px;border-radius:8px;font-size:13.5px}
+.foot2{margin:18px 0 0;font-size:14px}.foot2 a{color:var(--rose);font-weight:600}
