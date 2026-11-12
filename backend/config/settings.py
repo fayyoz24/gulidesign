@@ -3,9 +3,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY", "change-me")
 DEBUG = os.getenv("DEBUG", "1") == "1"
-ALLOWED_HOSTS = ["gulidesign.uz", "www.gulidesign.uz", "localhost", "127.0.0.1"]
-CSRF_TRUSTED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz"]
-CORS_ALLOWED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz", "http://localhost:5172"]
+ALLOWED_HOSTS = ["gulidesign.uz", "www.gulidesign.uz", "localhost", "127.0.0.1", "gulidesign.pythonanywhere.com"]
+CSRF_TRUSTED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz", "https://gulidesign.pythonanywhere.com"]
+CORS_ALLOWED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz", "http://localhost:5172", "https://gulidesign.pythonanywhere.com"]
 INSTALLED_APPS = ["django.contrib.admin", "django.contrib.auth", "django.contrib.contenttypes",
     "django.contrib.sessions", "django.contrib.messages", "django.contrib.staticfiles",
     "rest_framework", "corsheaders", "django_filters", "api"]
