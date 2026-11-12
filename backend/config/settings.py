@@ -5,7 +5,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "change-me")
 DEBUG = os.getenv("DEBUG", "1") == "1"
 ALLOWED_HOSTS = ["gulidesign.uz", "www.gulidesign.uz", "localhost", "127.0.0.1", "gulidesign.pythonanywhere.com"]
 CSRF_TRUSTED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz", "https://gulidesign.pythonanywhere.com", "http://localhost:5172", "https://gulidesign-vclk.vercel.app"]
-CORS_ALLOWED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz", "http://localhost:5172", "https://gulidesign.pythonanywhere.com", "https://gulidesign-vclk.vercel.app/"]
+CORS_ALLOWED_ORIGINS = ["https://gulidesign.uz", "https://www.gulidesign.uz", "http://localhost:5172", "https://gulidesign.pythonanywhere.com", "https://gulidesign-vclk.vercel.app"]
 INSTALLED_APPS = ["django.contrib.admin", "django.contrib.auth", "django.contrib.contenttypes",
     "django.contrib.sessions", "django.contrib.messages", "django.contrib.staticfiles",
     "rest_framework", "corsheaders", "django_filters", "api"]
